@@ -14,6 +14,7 @@ deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
   app: "react"
+  label: "react-app"
   env: "React-env"
   bucket_name: elasticbeanstalk-us-east-2-753505535858
   bucket_path: "react"
@@ -21,3 +22,4 @@ deploy:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
+  cleanup: true
